@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- bootstrap link -->
+     <link rel="stylesheet" href="bootstrap.css">
+     <link rel="stylesheet" href="bootstrap.js">
+     <!-- ICON LINK -->
+     <link rel="stylesheet" type="text/css"
+         href="all.css">
+     <!-- MY LINK -->
+     <link rel="stylesheet" href="contact me.css">
+    <title>Contact</title>
+</head>
+<body>
+     <!-- navbar -->
+     <nav class="navbar navbar-fixed-top navbar-light navbar-expand-sm navbar-template">
+        <a class="navbar-brand" href="../index.html">
+            <h2> <span class="text-white">MY</span> <span class="text-danger">PORTFOLIO</span></h2>
+        </a>
+
+        <div class="d-flex flex-row order-2 order-sm-3">
+            <ul class="navbar-nav">
+                <div class="nav">
+                    <li class="nav-item">
+                        <a class="nav-link px-2 text-primary" href="https://www.facebook.com/felix.okafor.31149">
+                            <i class="fab fa-facebook"> </i>
+                        </a>
+                    </li>
+    
+                    <li class="nav-item">
+                        <a class="nav-link px-2 text-success"
+                            href="https://wa.me/%2B23462912838?text=Hi%2c%0AWelcome%20to%20my%20DM%2c%0AYour%20name__%0AHow%20may%20we%20help%20you%20today%3f">
+                            <i class="fab fa-whatsapp"> </i>
+                        </a>
+                    </li>
+    
+                    <li class="nav-item">
+                        <a class="nav-link px-2 text-danger" href="#">
+                            <i class="fab fa-instagram"> </i>
+                        </a>
+                    </li>
+    
+                    <li class="nav-item">
+                        <a class="nav-link px-2 text-info" href="#">
+                            <i class="fab fa-telegram"> </i>
+                        </a>
+                    </li>
+                </div>
+            </ul>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+    </nav>
+    <!-- end of navbar -->
+
+    <main role="main" class="container">
+        <div class="spinner">
+            <div class="spinner-grow text-info"></div>
+            <div class="spinner-grow text-muted"></div>
+            <div class="spinner-grow text-primary"></div>
+            <div class="spinner-grow text-success"></div>
+            <div class="spinner-grow text-warning"></div>
+            <div class="spinner-grow text-danger"></div>
+            <div class="spinner-grow text-secondary"></div>
+            <div class="spinner-grow text-dark"></div>
+        </div>
+        <div class="conta1 mt-5">
+            <h1 class="text-danger">connect with me</h1>
+            <small class="text-white">i would love to respond to your request and help you succeed <br>
+                feel free to get in touch with us.
+            </small>
+            <div class="row justify-content-center mt-5">
+                <div class="box">
+                    <!-- form -->
+                    <form class="main-form form m-5 needs-validation" novalidate>
+                        <h2 class="text-white text-center">CONTACT ME</h2>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <input type="text" placeholder="Your Name" class="form-control" required>
+                                <div class="valid-feedback"> looks good</div>
+                            </div>
+                            <div class="col-md-6">
+                                <input type="tel" placeholder="PhoneNumber" class="form-control" required>
+                                <div class="valid-feedback">Good</div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-6">
+                                <input type="email" placeholder="Your Email" class="form-control" required>
+                                <div class="invalid-feedback">Pls Enter A Valid Email</div>
+                            </div>
+                            <div class="col-md-6">
+                                <input type="text" placeholder="Subject"  class="form-control" required>
+                                <div class="valid-feedback">Good</div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-12">
+                                <textarea placeholder="Message"  class="form-control" required></textarea> 
+                                <div class="valid-feedback">Good</div>
+                                <br>
+                                <input type="checkbox" id="accept-terms" required>
+                                <label for="accept-terms"> Accept Terms &amp; Conditions</label> <br>
+                                <button type="submit" class="btn btn-outline-primary p-2 pr-4 pl-4">contact me</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+              <!-- FOOTER -->
+          <footer class="container mt-5">
+            <p class="text-white">&copy; 2020-2025 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+            <p class="float-right text-white"><a href="#">Back to top</a></p>
+            <p class="text-white">
+                <i class="fa fa-phone text-info"></i>
+                <small class="text-white">08162912838</small> <br>
+
+                <i class="fah fa-phone text-info"></i>
+                <small class="text-white">1552 adankolo newlayout lokoja</small>
+                
+                <div class="spinner">
+                    <div class="spinner-grow spinner-grow-sm text-info"></div>
+                    <div class="spinner-grow spinner-grow-sm text-primary"></div>
+                    <div class="spinner-grow spinner-grow-sm text-success"></div>
+                    <div class="spinner-grow spinner-grow-sm text-warning"></div>
+               </div>
+            </p>
+        </footer>
+    </main>
+
+    <script>
+        var form = document.querySelector('.needs-validation');
+
+        form.addEventListener('submit', function(event) {
+            if(form.checkValidity() === false) {
+                event.preventDefault();
+                event.stopPropagation();
+            }
+            form.classList.add('was-validated');
+        })
+    </script>
+</body>
+</html>
